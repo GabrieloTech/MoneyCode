@@ -1,30 +1,67 @@
-# 💰 MoneyCode
+<div align="center">
 
-> Um sistema web focado em lógica de programação e gerenciamento, desenvolvido com tecnologias modernas de frontend.
+# ⚡ MoneyCode
 
-## 🚀 Sobre o Projeto
-O **MoneyCode** é uma aplicação web voltada para a gestão e controle financeiro (ou regras de negócio correlatas), criada com o objetivo de consolidar conceitos fundamentais de desenvolvimento frontend, manipulação do DOM e estruturação de interfaces limpas.
+<p align="center">
+  <b>Um sistema web moderno e dinâmico focado em controle financeiro e lógica de programação avançada.</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge&logo=none" alt="Status Concluído">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</p>
+
+</div>
 
 ---
 
-## ✨ Funcionalidades
-- **Interface Responsiva:** Layout adaptado para diferentes tamanhos de tela.
-- **Lógica Dinâmica:** Manipulação de dados e interações em tempo real utilizando JavaScript.
-- **Estrutura Modular:** Organização de código limpa e fácil de manter.
+## 🎯 Sobre o Projeto
+
+O **MoneyCode** foi desenvolvido com o objetivo de unir uma interface limpa, responsiva e de alto padrão visual com uma lógica de programação sólida no frontend. O projeto simula um ambiente de gestão financeira eficiente, priorizando a experiência do usuário (UX) e a performance na manipulação de dados em tempo real.
+
+---
+
+## 📸 Demonstração do Sistema
+
+> *Dica: Para adicionar as imagens, salve os prints na pasta do seu projeto (ex: numa pasta `assets/images/`) e atualize os caminhos abaixo.*
+
+<div align="center">
+  <p><b>Tela Principal / Dashboard</b></p>
+  <img src="./assets/images/home.png" alt="Tela Principal MoneyCode" width="85%">
+  
+  <p><b>Funcionalidades e Interações</b></p>
+  <img src="./assets/images/sistema.png" alt="Sistema MoneyCode em execução" width="85%">
+</div>
+
+---
+
+## ✨ Principais Funcionalidades
+
+- **Dashboard Dinâmico:** Atualização de dados e visualização rápida de métricas financeiras.
+- **Manipulação Avançada do DOM:** Interações fluidas e sem recarregamento de página usando JavaScript puro (Vanilla JS).
+- **Design Responsivo:** Layout adaptado perfeitamente para diferentes resoluções de tela (Desktop, Tablet e Mobile).
+- **Arquitetura Limpa:** Código organizado e modularizado, facilitando a manutenção e futuras expansões.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
-- **HTML5** (Estruturação semântica)
-- **CSS3** (Estilização, layout e responsividade)
-- **JavaScript (ES6+)** (Lógica da aplicação e manipulação do DOM)
+
+Este projeto foi construído utilizando as seguintes tecnologias:
+
+| Tecnologia | Finalidade |
+| :--- | :--- |
+| **HTML5** | Estruturação semântica e acessível da aplicação |
+| **CSS3** | Estilização avançada, variáveis globais e layout responsivo |
+| **JavaScript (ES6+)** | Lógica de negócios, manipulação de estado e eventos |
 
 ---
 
-## ⚙️ Como Executar o Projeto
-Para rodar este projeto localmente, siga os passos abaixo:
+## 🚀 Como Executar o Projeto
 
-1. Clone o repositório:
+Se você quiser rodar o projeto localmente na sua máquina, siga os passos abaixo:
+
+1. **Clone o repositório:**
    ```bash
    git clone [https://github.com/GabrieloTech/MoneyCode.git](https://github.com/GabrieloTech/MoneyCode.git)
