@@ -1,0 +1,883 @@
+/* =========================================================
+   PÁGINA BOLSA DE VALORES
+========================================================= */
+
+.bolsa-page {
+    padding-top: 1rem !important;
+    margin-top: 0 !important;
+}
+
+.bolsa-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 370px;
+    gap: 2rem;
+    align-items: start;
+    margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   TICKER TAPE
+========================================================= */
+
+.bolsa-ticker {
+    width: 100%;
+    height: 80px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    background: var(--bg-primary) !important;
+
+    line-height: 0 !important;
+}
+
+.bolsa-ticker tv-ticker-tape {
+    display: block !important;
+
+    width: 100% !important;
+    height: 80px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.bolsa-hero {
+    padding: 2.5rem;
+
+    border: 1px solid rgba(0, 209, 255, 0.2);
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0, 209, 255, 0.16),
+        rgba(255, 255, 255, 0.04)
+    );
+}
+
+.bolsa-hero .title {
+    color: #ffffff;
+}
+
+.bolsa-hero p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TAG DO HERO
+========================================================= */
+
+.bolsa-tag {
+    display: inline-block;
+
+    color: var(--bg-primary);
+    background: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    padding: 0.4rem 0.7rem;
+
+    border-radius: 999px;
+
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   BOTÃO DA BOLSA
+========================================================= */
+
+.bolsa-button {
+    margin-top: 1rem;
+
+    background: var(--accent);
+    color: var(--bg-primary);
+
+    border: 0;
+    border-radius: 999px;
+
+    font-weight: 700;
+}
+
+.bolsa-button:hover {
+    background: var(--accent-hover);
+    color: var(--bg-primary);
+}
+
+
+/* =========================================================
+   SEÇÕES
+========================================================= */
+
+.bolsa-section {
+    margin-top: 3rem;
+}
+
+.bolsa-section h2 {
+    color: #ffffff;
+
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    margin-bottom: 1.2rem;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.bolsa-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.three-columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+/* =========================================================
+   CARD INDIVIDUAL
+========================================================= */
+
+.bolsa-card,
+.bolsa-alerta {
+    padding: 1.4rem;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(0, 209, 255, 0.15);
+
+    border-radius: 14px;
+}
+
+.bolsa-card span {
+    display: grid;
+    place-items: center;
+
+    width: 28px;
+    height: 28px;
+
+    margin-bottom: 0.8rem;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+    color: var(--bg-primary);
+
+    font-weight: 700;
+}
+
+.bolsa-card h3 {
+    color: #ffffff;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    margin-bottom: 0.6rem;
+}
+
+.bolsa-card p,
+.bolsa-card li,
+.bolsa-alerta p {
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+.bolsa-card ul {
+    margin-left: 1.2rem;
+}
+
+.bolsa-card li::marker {
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   MARKET SUMMARY - TRADINGVIEW
+========================================================= */
+
+.mercado-resumo {
+    width: 100%;
+}
+
+.mercado-resumo h2 {
+    color: #ffffff;
+
+    margin-bottom: 1.2rem;
+}
+
+.market-summary-container {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    background: transparent !important;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.market-summary-container tv-market-summary {
+    display: block !important;
+
+    width: 100% !important;
+
+    min-height: 450px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   TABELA DE CORRETORAS
+========================================================= */
+
+.corretoras,
+.corretoras-tabela {
+    width: 100%;
+
+    margin-top: 3rem;
+
+    padding: 1.6rem !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    color: #ffffff;
+}
+
+.corretoras h2,
+.corretoras-tabela h2 {
+    margin: 0 0 0.7rem !important;
+
+    color: #ffffff !important;
+
+    font-size: 1.25rem !important;
+
+    font-weight: 700;
+}
+
+.corretoras > p,
+.corretoras-tabela > p {
+    margin: 0 0 1rem !important;
+
+    color: #ffffff !important;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   TABELA
+========================================================= */
+
+.corretoras table,
+.corretoras-tabela table {
+    width: 100% !important;
+
+    border-collapse: collapse !important;
+
+    color: #ffffff !important;
+
+    background: transparent !important;
+}
+
+.corretoras th,
+.corretoras td,
+.corretoras-tabela th,
+.corretoras-tabela td {
+    padding: 0.75rem 0 !important;
+
+    text-align: left !important;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14) !important;
+
+    color: #ffffff !important;
+
+    background: transparent !important;
+
+    font-size: 0.9rem;
+}
+
+.corretoras th,
+.corretoras-tabela th {
+    font-weight: 700;
+}
+
+.corretoras tbody tr:last-child td,
+.corretoras-tabela tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+
+/* =========================================================
+   HOVER DA TABELA
+========================================================= */
+
+.corretoras table tbody tr:hover,
+.corretoras table tbody tr:hover td,
+.corretoras-tabela table tbody tr:hover,
+.corretoras-tabela table tbody tr:hover td {
+    background: transparent !important;
+    background-color: transparent !important;
+
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   BOTÃO VISITAR SITE
+========================================================= */
+
+.btn-site {
+    display: inline-block;
+
+    padding: 6px 16px;
+
+    background: #00c8ff;
+
+    color: #06263b !important;
+
+    text-decoration: none !important;
+
+    border-radius: 20px;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.btn-site:hover {
+    background: #00e5ff;
+
+    color: #06263b !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PAINEL LATERAL DE MERCADOS
+========================================================= */
+
+.mercados-sidebar {
+    position: sticky;
+
+    top: 1.5rem;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   CABEÇALHO DO PAINEL
+========================================================= */
+
+.mercados-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 0 0.7rem 0;
+
+    background: transparent !important;
+}
+
+.mercados-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+}
+
+.mercados-header span {
+    color: #b6b6b6;
+}
+
+
+/* =========================================================
+   MARKET OVERVIEW
+========================================================= */
+
+.mercados-sidebar tv-market-overview {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: 650px !important;
+
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    outline: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   MARKET DATA
+   Mantido caso você volte a utilizar esse widget
+========================================================= */
+
+.mercados-sidebar tv-market-data {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: 650px !important;
+
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    outline: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.widget-loading {
+    padding: 1rem;
+
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   AJUSTE DO CONTAINER DO BULMA
+========================================================= */
+
+main.bolsa-page {
+    margin-top: 0 !important;
+}
+
+main.bolsa-page > .container {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   NAVBAR + TICKER
+========================================================= */
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.navbar + .bolsa-ticker {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   REMOVE ESPAÇOS DO TICKER
+========================================================= */
+
+.bolsa-ticker,
+.bolsa-ticker * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TRANSPARÊNCIA DOS WIDGETS
+========================================================= */
+
+.bolsa-ticker tv-ticker-tape,
+.market-summary-container tv-market-summary,
+.mercados-sidebar tv-market-overview,
+.mercados-sidebar tv-market-data {
+    background: transparent !important;
+
+    border: none !important;
+
+    outline: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVO - TABLET
+========================================================= */
+
+@media (max-width: 1023px) {
+
+    .bolsa-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .mercados-sidebar {
+        position: static;
+    }
+
+    .mercados-sidebar tv-market-overview,
+    .mercados-sidebar tv-market-data {
+        width: 100% !important;
+
+        height: 650px !important;
+
+        min-height: 0 !important;
+    }
+
+    .market-summary-container tv-market-summary {
+        width: 100% !important;
+
+        min-height: 450px;
+    }
+}
+
+/* =========================================================
+   CORREÇÃO RESPONSIVA DOS WIDGETS NO CELULAR
+========================================================= */
+
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bolsa-page,
+    .bolsa-layout,
+    .bolsa-content {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .bolsa-layout {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    .bolsa-page {
+        padding: 1.25rem 0.75rem !important;
+    }
+
+    .bolsa-hero {
+        padding: 1.4rem;
+    }
+
+    .bolsa-hero .title {
+        font-size: 1.75rem;
+        overflow-wrap: break-word;
+    }
+
+    /* Widget grande: rolagem somente dentro dele */
+    .market-summary-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-x: auto !important;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .market-summary-container tv-market-summary {
+        display: block !important;
+        width: 680px !important;
+        min-width: 680px !important;
+        max-width: none !important;
+    }
+
+    /* Tabela: rolagem somente dentro da tabela */
+    .corretoras-tabela {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 1rem !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .corretoras-tabela table {
+        min-width: 650px !important;
+    }
+
+    /* Painel lateral passa para baixo do conteúdo */
+    .mercados-sidebar {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        position: static;
+        overflow-x: auto !important;
+    }
+
+    .mercados-sidebar tv-market-overview {
+        width: 100% !important;
+        min-width: 0 !important;
+        height: 500px !important;
+    }
+
+    .bolsa-cards.two-columns,
+    .bolsa-cards.three-columns {
+        grid-template-columns: 1fr !important;
+    }
+
+    .bolsa-card {
+        padding: 1.1rem;
+    }
+}
+    
+
+
+/* Menu mobile com fundo azul */
+@media (max-width: 1023px) {
+    .navbar-menu,
+    .navbar-menu.is-active {
+        background-color: var(--bg-primary) !important;
+        box-shadow: none !important;
+    }
+
+    .navbar-menu .navbar-item {
+        color: var(--text) !important;
+    }
+
+    .navbar-menu .navbar-item.is-active,
+    .navbar-menu .navbar-item:hover {
+        background-color: rgba(0, 209, 255, 0.1) !important;
+        color: var(--accent) !important;
+    }
+
+    .navbar-menu .btn-cadastrar {
+        color: var(--bg-primary) !important;
+    }
+}
+
+/* ==========================================
+   FOOTER MODERNO
+   ========================================== */
+
+.site-footer {
+  background-color: #071322;
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+  padding-top: 3.5rem;
+}
+
+.footer-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 1.2fr;
+  gap: 2.5rem;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+.footer-logo .logo {
+  color: var(--accent-cyan);
+  font-size: 1.4rem;
+}
+
+.footer-brand p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-nav h4,
+.footer-info h4 {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-cyan);
+  padding-left: 4px;
+}
+
+.footer-info p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.security-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.security-tags span {
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  background: rgba(0, 242, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.2rem 1.5rem;
+  background-color: #050d18;
+}
+
+.footer-bottom-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-legal-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #fff;
+}
+
+
+/* ==========================================
+   RESPONSIVO FOOTER (TABLET E MOBILE)
+   ========================================== */
+
+@media (max-width: 900px) {
+  .footer-container {
+    /* Passa de 4 para 2 colunas no tablet */
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .footer-container {
+    /* Empilha tudo em 1 coluna no celular */
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem 2rem;
+  }
+
+  .footer-bottom-container {
+    /* Empilha os textos de copyright e links legais */
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

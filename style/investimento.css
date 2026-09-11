@@ -1,0 +1,598 @@
+/* ===========================
+   ARTIGO
+=========================== */
+.post-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.post-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+}
+.post-meta {
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+/* Colunas com a mesma altura */
+.columns {
+    align-items: stretch !important;
+}
+
+/* Coluna da imagem */
+.column.is-5 {
+    display: flex;
+}
+.column.is-5 .image {
+    width: 100%;
+    height: 100%;
+}
+/* Imagem */
+.post-image {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;/*Tamanho da imagem*/
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* Conteúdo */
+.content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    color: #ddd;
+}
+/* Força o negrito dentro do conteúdo a herdar a cor clara (#ddd) do parágrafo */
+.content strong {
+    color: inherit; 
+}
+.content h2 {
+    color: grey;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Lista de investimentos */
+.lista-investimentos {
+    color: #e2e8f0; /* Cor do texto */
+}
+
+.lista-investimentos li {
+    color: #e2e8f0; /* Texto branco */
+}
+
+.lista-investimentos li::marker {
+    color: #00d1ff; /* Apenas a bolinha azul */
+}
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar-item {
+    color: var(--text) !important;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.navbar-item:hover {
+    color: var(--accent) !important;
+    transform: translateY(-2px);
+}
+.navbar-item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: all 0.3s ease;
+}
+.navbar-item:hover::after {
+    width: 100%;
+    left: 0;
+}
+.btn-cadastrar {
+    background: var(--accent);
+    color: var(--bg-primary);
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 10px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 209, 255, 0.3);
+}
+
+.btn-cadastrar:hover {
+    background: var(--accent-hover);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 209, 255, 0.4);
+}
+.btn-cadastrar:active {
+    transform: scale(0.95);
+
+}
+.divisor{
+    width: calc(100% - 3rem);
+    max-width: 1350px; /*maior*/
+    margin: 2rem auto;/*---*/
+    border: none;
+    height: 2px;
+    background: rgba(255,255,255,.12);
+}
+.quiz-section{
+    padding-top: 0 !important;
+    padding-bottom: 2rem;/*Aqui */
+}
+/*--------------------------------*/
+/* ===========================
+   CARDS DE INVESTIMENTOS LADO A LADO
+=========================== */
+.card-investimento {
+    background-color: rgba(255, 255, 255, 0.04); /* Fundo sutil para destacar do fundo principal */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%; /* Garante que todos fiquem com a mesma altura na linha */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse por cima dos cards */
+.card-investimento:hover {
+    transform: translateY(-4px);
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* Tags superiores amarelas idênticas às da imagem */
+.tag-categoria {
+    align-self: flex-start;
+    background-color:#C6B946; /* Cor amarela do topo */
+    color: #000 !important;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Título do investimento */
+.card-investimento-title {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem !important;
+}
+
+/* Descrição do investimento */
+.card-investimento-text {
+    color: #94a3b8 !important; /* Cor cinza suave para descrição idêntica ao exemplo */
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem !important;
+    flex-grow: 1; /* Empurra o link sempre para o rodapé do card */
+}
+
+/* Link inferior azul */
+.card-investimento-link {
+    color: #00d1ff !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    align-self: flex-start;
+}
+
+.card-investimento-link:hover {
+    color: #ffffff !important;
+}
+
+/* ======================================================
+   CORES
+====================================================== */
+:root {
+    --bg-primary: #0A2540;
+    --bg-secondary: #1b3b5a;
+    --bg-card: rgba(10, 37, 64, 0.7);
+    --accent: #00d1ff;
+    --accent-hover: #00b4d8;
+    --gold: #C6B946;
+    --gold-light: #ffd000;
+    --text: #e2e8f0;
+    --text-muted: #cbd5e1;
+    --glass: rgba(255, 255, 255, 0.05);
+    --glass-hover: rgba(255, 255, 255, 0.08);
+    --border-color: rgba(198, 185, 70, 0.2);
+}
+/* ======================================================
+   CONTAINER
+====================================================== */
+.quiz-container{
+    max-width:1100px;
+    margin:70px auto;
+}
+/* ======================================================
+   TÍTULO
+====================================================== */
+.quiz-title{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:30px;
+    line-height:1.2;
+}
+/* ======================================================
+   CAIXA (IGUAL AO SIMULADOR)
+====================================================== */
+.quiz-box{
+    width:100%;
+    background:#0a2540;
+    border-radius:15px;
+    padding:40px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+/* ======================================================
+   TÍTULOS
+====================================================== */
+.quiz-box h1{
+    font-size:2rem;
+    color:#ffffff;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.quiz-box h2{
+    font-size:1.5rem;
+    color:#ffffff;
+    font-weight:600;
+    margin:30px 0;
+    line-height:1.5;
+}
+.quiz-box p,
+.quiz-box li{
+    color:#ffffff;
+}
+/* ======================================================
+   TELA INICIAL
+====================================================== */
+
+#inicio{
+    text-align:center;
+}
+
+#inicio ul{
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+}
+
+#inicio li{
+    font-size:1.1rem;
+    margin:15px 0;
+}
+/* ======================================================
+   BOTÕES
+====================================================== */
+#btnIniciar,
+#proximo,
+#btnReiniciar{
+
+    background:linear-gradient(90deg,var(--accent), #00a8ff);
+    color:#000;
+    border:none;
+    padding:15px 40px;
+    border-radius:999px;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 0 25px rgba(0,209,255,.35);
+}
+
+#btnIniciar:hover,
+#proximo:hover,
+#btnReiniciar:hover{
+
+    background:linear-gradient(90deg,var(--accent-hover),var(--accent));
+    transform:translateY(-3px);
+    box-shadow:0 0 35px rgba(0,209,255,.55);
+}
+/* ======================================================
+   CABEÇALHO
+====================================================== */
+.info{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin-bottom:25px;
+}
+
+.card{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:linear-gradient(90deg,var(--accent),#00a8ff);
+    color:#000;
+    padding:14px 24px;
+    border-radius:999px;
+    font-weight:700;
+    box-shadow:0 0 25px rgba(0,209,255,.35);
+}
+#contador{
+    color:#ffffff;
+    font-weight:700;
+}
+/* ======================================================
+   BARRA
+====================================================== */
+.barra{
+    width:100%;
+    height:10px;
+    background:rgba(255,255,255,.15);
+    border-radius:999px;
+    overflow:hidden;
+    margin-bottom:35px;
+}
+#progresso{
+    width:0%;
+    height:100%;
+    background:linear-gradient(90deg, var(--accent),#00a8ff);
+    transition:.4s;
+}
+/* ======================================================
+   OPÇÕES
+====================================================== */
+#opcoes{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:35px;
+}
+
+#opcoes button{
+    width:100%;
+    text-align:left;
+    padding:20px 22px;
+    border:2px solid rgba(255,255,255,.12);
+    background:#163552;
+    color: #ffffff;
+    border-radius:14px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:1rem;
+}
+
+#opcoes button:hover{
+    border-color:var(--accent);
+    background:#1b486f;
+    transform:translateX(6px);
+}
+
+#opcoes button.selecionado{
+    background:linear-gradient(90deg, var(--accent),#00a8ff);
+    border-color:var(--accent);
+    color:#000;
+}
+/* ======================================================
+   RESULTADO
+====================================================== */
+#resultado{
+    text-align:center;
+    color:#ffffff;
+}
+
+#perfilNome{
+    font-size:2rem;
+    color:#ffffff;
+    margin:20px 0;
+}
+
+#perfilDescricao{
+    font-size:1.1rem;
+    color:#ffffff;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+#perfilSugestoes{
+    background:#163552;
+    border-left:6px solid var(--accent);
+    padding:25px;
+    border-radius:15px;
+    text-align:left;
+    color:#ffffff;
+    margin-bottom:35px;
+}
+/* ======================================================
+   RESPONSIVO
+====================================================== */
+@media (max-width:768px){
+    .quiz-container{
+        margin:40px 20px;
+    }
+    .quiz-title{
+        font-size:2rem;
+    }
+    .quiz-box{
+        padding:25px;
+    }
+    .quiz-box h1{
+        font-size:1.7rem;
+    }
+    .quiz-box h2{
+        font-size:1.2rem;
+    }
+    #btnIniciar,
+    #proximo,
+    #btnReiniciar{
+        width:100%;
+    }
+    .card{
+        width:fit-content;
+    }
+}
+
+/* ==========================================
+   FOOTER MODERNO
+   ========================================== */
+
+.site-footer {
+  background-color: #071322;
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+  padding-top: 3.5rem;
+}
+
+.footer-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 1.2fr;
+  gap: 2.5rem;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+.footer-logo .logo {
+  color: var(--accent-cyan);
+  font-size: 1.4rem;
+}
+
+.footer-brand p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.footer-nav h4,
+.footer-info h4 {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-cyan);
+  padding-left: 4px;
+}
+
+.footer-info p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.security-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.security-tags span {
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  background: rgba(0, 242, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.2rem 1.5rem;
+  background-color: #050d18;
+}
+
+.footer-bottom-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-legal-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #fff;
+}
+
+/* ==========================================
+   RESPONSIVO FOOTER (TABLET E MOBILE)
+   ========================================== */
+
+@media (max-width: 900px) {
+  .footer-container {
+    /* Passa de 4 para 2 colunas no tablet */
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .footer-container {
+    /* Empilha tudo em 1 coluna no celular */
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem 2rem;
+  }
+
+  .footer-bottom-container {
+    /* Empilha os textos de copyright e links legais */
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

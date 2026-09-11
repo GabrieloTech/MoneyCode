@@ -1,0 +1,301 @@
+/* ===========================
+        PÁGINA APOSTAS
+===========================*/
+
+.apostas{
+    padding:50px 20px;
+}
+
+.apostas-container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HERO */
+
+.apostas-hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:70px;
+    flex-wrap:wrap;
+}
+
+.apostas-texto{
+    flex:1;
+    min-width:320px;
+}
+
+.apostas-categoria{
+    display:inline-block;
+    background:#c6b946;
+    color:#0A2540;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.apostas-texto h1{
+    font-size:3rem;
+    color:white;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.apostas-texto p{
+    color:#d6d6d6;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.apostas-imagem{
+    flex:1;
+    min-width:320px;
+}
+
+.apostas-imagem img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
+}
+
+/* TITULOS */
+
+.apostas-noticias h2,
+.estatisticas h2,
+.jogos-alta h2,
+.responsavel h2{
+
+    color:#00d1ff;
+    margin-bottom:30px;
+    font-size:2rem;
+
+}
+
+/* GRID */
+
+.apostas-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+
+}
+
+/* CARD */
+
+.apostas-card{
+
+    background:rgba(255,255,255,.05);
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.apostas-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.apostas-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+}
+
+.card-conteudo{
+
+    padding:20px;
+
+}
+
+.card-conteudo span{
+
+    display:inline-block;
+    background:#c6b946;
+    color:#0A2540;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:.8rem;
+    font-weight:bold;
+
+}
+
+.card-conteudo h3{
+
+    color:white;
+    margin:14px 0;
+
+}
+
+.card-conteudo p{
+
+    color:#d0d0d0;
+    line-height:1.7;
+    margin: 20px;
+
+}
+
+/* ESTATÍSTICAS */
+
+.estatisticas{
+
+    margin-top:70px;
+
+}
+
+.estatisticas-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+}
+
+.numero{
+
+    background:rgba(255,255,255,.05);
+    padding:35px 20px;
+    border-radius:18px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.numero:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.numero h3{
+
+    color:#00d1ff;
+    font-size:2.3rem;
+    margin-bottom:10px;
+
+}
+
+.numero p{
+
+    color:white;
+
+}
+
+/* JOGOS */
+
+.jogos-alta{
+
+    margin-top:70px;
+
+}
+
+.jogos-alta ul{
+
+    list-style:none;
+
+}
+
+.jogos-alta li{
+
+    background:rgba(255,255,255,.05);
+    margin-bottom:15px;
+    padding:18px 22px;
+    border-radius:12px;
+    transition:.3s;
+
+}
+
+.jogos-alta li:hover{
+
+    transform:translateX(10px);
+    background:rgba(255,255,255,.08);
+
+}
+
+/* RESPONSÁVEL */
+
+.responsavel{
+
+    margin-top:70px;
+    margin-bottom:50px;
+    padding:35px;
+    background:rgba(198,185,70,.12);
+    border-left:5px solid #c6b946;
+    border-radius:15px;
+
+}
+
+.responsavel p{
+
+    color:white;
+    line-height:1.8;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .apostas-hero{
+
+        flex-direction:column-reverse;
+
+    }
+
+    .apostas-texto h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .apostas-imagem img{
+
+        height:280px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .apostas{
+
+        padding:30px 15px;
+
+    }
+
+    .apostas-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .estatisticas-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .apostas-texto h1{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+
+
+    
