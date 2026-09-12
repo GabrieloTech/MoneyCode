@@ -1,6 +1,6 @@
 # 💰 MoneyCode
 
-> **Projeto Acadêmico Colaborativo** — Uma aplicação web interativa desenvolvida em PHP e JavaScript com foco em educação e conscientização financeira, construída de forma conjunta por toda a turma.
+> **Projeto Acadêmico Colaborativo** — Uma aplicação web interativa desenvolvida em PHP e JavaScript com foco em educação e conscientização financeira. Projeto construído de forma conjunta por toda a turma **TI103** do curso **Técnico em Informática** no **Senac Santo André**.
 
 ---
 
@@ -9,6 +9,18 @@
 O **MoneyCode** é uma plataforma web desenvolvida como projeto acadêmico prático para promover a **educação financeira**. A aplicação aborda temas fundamentais do mercado financeiro e hábitos de consumo modernos, como riscos de apostas virtuais, uso consciente de cartão de crédito, investimentos, bolsa de valores e consumo digital.
 
 Todo o projeto foi planejado, estruturado e codificado de forma **colaborativa em equipe**, simulando um ambiente real de desenvolvimento de software onde os alunos atuaram na criação das páginas, integração com banco de dados em PHP, desenvolvimento de rotas e estilização.
+
+---
+
+## 📸 Demonstração do Sistema
+
+Abaixo estão algumas das principais interfaces do projeto:
+
+### Página Inicial (Dashboard)
+![Tela Inicial - MoneyCode](assets/images/index.png)
+
+### Tela de Autenticação (Login)
+![Tela de Login - MoneyCode](assets/images/login.png)
 
 ---
 
@@ -77,7 +89,7 @@ MONEY CODE/
 
 ## 🤝 Colaboração Acadêmica
 
-Este projeto representa o esforço conjunto e a cooperação de toda a turma. A divisão de tarefas garantiu que cada aluno contribuísse em etapas cruciais:
+Este projeto representa o esforço conjunto e a cooperação de toda a turma **TI103** do **Senac Santo André**. A divisão de tarefas garantiu que cada aluno contribuísse em etapas cruciais:
 
 1. **Modelagem de Dados & Backend:** Configuração das tabelas MySQL e desenvolvimento dos scripts PHP de autenticação (`valida.php`, `salvar.php`).
 2. **Desenvolvimento Web Front-end:** Implementação das telas HTML/PHP e estilos gráficos.
@@ -117,5 +129,5 @@ Projeto desenvolvido com propósitos puramente educacionais e acadêmicos.
 ---
 
 <p align="center">
-  Desenvolvido com coração e cooperação por toda a turma TI103 Senac Santo André | <b>MoneyCode 2026</b>
+  Desenvolvido com dedicação e cooperação por toda a turma <b>TI103 - Técnico em Informática (Senac Santo André)</b> | <b>MoneyCode 2026</b>
 </p>
