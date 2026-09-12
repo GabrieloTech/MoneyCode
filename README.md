@@ -37,7 +37,6 @@ Abaixo estão algumas das principais interfaces do projeto:
 ### Tela de Autenticação (Login)
 ![Tela de Login - MoneyCode](assets/images/login.png)
 
-> Dica: para adicionar as imagens finais do projeto, salve os prints na pasta `assets/images/` e atualize os caminhos conforme necessário.
 
 ---
 
