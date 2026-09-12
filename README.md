@@ -37,7 +37,7 @@ Todo o projeto foi planejado, estruturado e codificado de forma **colaborativa e
 - **Front-end:** HTML5, CSS3, JavaScript (ES6+)
 - **Banco de Dados:** MySQL (Scripts PHP em `banco_de_dados/`)
 - **Versionamento & Governança:** Git e GitHub (Trabalho colaborativo e integração contínua)
-- **Ferramenta de Desenvolvimento:** VS Code
+- **Ferramenta de Desenvolvimento:** VS Code e IDE
 
 ---
 
