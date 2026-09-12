@@ -29,10 +29,10 @@ O **MoneyCode** foi desenvolvido com o objetivo de unir uma interface limpa, res
 
 <div align="center">
   <p><b>Tela Principal / Dashboard</b></p>
-  <img src="./assets/images/home.png" alt="Tela Principal MoneyCode" width="85%">
+  <img src="./assets/images/index.png" alt="Tela Principal MoneyCode" width="85%">
   
-  <p><b>Funcionalidades e Interações</b></p>
-  <img src="./assets/images/sistema.png" alt="Sistema MoneyCode em execução" width="85%">
+  <p><b>Login</b></p>
+  <img src="./assets/images/login.png" alt="Sistema MoneyCode em execução" width="85%">
 </div>
 
 ---
