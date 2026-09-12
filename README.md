@@ -117,5 +117,5 @@ Projeto desenvolvido com propósitos puramente educacionais e acadêmicos.
 ---
 
 <p align="center">
-  Desenvolvido com 💚 e cooperação por toda a turma | <b>MoneyCode 2026</b>
+  Desenvolvido com coração e cooperação por toda a turma TI103 Senac Santo André | <b>MoneyCode 2026</b>
 </p>
